@@ -26,3 +26,5 @@ The deliberate proof hole in `OracleChallenge.lean` belongs to the
 Comparator's statement input. The proof build uses `Solution` and its
 imports. The [Comparator configuration](comparator.json) selects the
 bytecode theorem and lists the allowed Lean axioms.
+
+The Lean code is distributed under [Apache-2.0](LICENSE).

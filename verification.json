@@ -449,12 +449,14 @@
     "PaperB/TopologicalRank.lean": "99d1fe29eb45d4ce1f61d7c2793284141f53a31c713608c3ab1272932a46b7de",
     "PaperB/TreeIndex.lean": "b25aab9414c86eb98b4e04a98880277f242c4d8072a81ee4f5b45fc107c5f80b",
     "PaperB/WordOps.lean": "275e56667e024c3c230481e6c75b3309d9b663b55366022a8b15943005268671",
-    "README.md": "92aa3f628c5f461d061aeff386e31587fc4fd1282c13a9ae26f07561515a1cb7",
+    "README.md": "fc643502f7bbacbcb824059cc8dcf2827fcfc7d7d6d61c8a6c40972dd45462ac",
     "comparator.json": "0019642851672aabc8c8cea0c44568bff0e0ff4297ee61908788e88ac8cc86ba",
     "render_oracle_challenge.py": "c343ded488f613ab92af875537f2c1f3c65dede4277d0ab62faaeec08ca74dc2",
     "lake-manifest.json": "0b33d0a190491bbcb097037a504a4bd7d125b2062c8e83943ae8a8a2698f8a86",
     "lakefile.toml": "2433f2f49c164dad0d3126801d5bfb3cb4b2afda20b9cf23254904347de7c19a",
-    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "formalization.yaml": "defcc10b50ab8dbe3328569829ac6724ec7fe9330ac62dcce7814c672a4fd21f"
   },
   "kernel": "Lean default kernel accepts the solution",
   "nanoda": {
@@ -474,5 +476,14 @@
       "nat_extension": true,
       "string_extension": true
     }
+  },
+  "release_metadata": {
+    "file": "formalization.yaml",
+    "license": "Apache-2.0",
+    "license_source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "license_match": "byte-identical to the Apache Software Foundation's published text",
+    "verifier_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "validation": "pinned Palomar schema, provenance, comparator, toolchain and source preflight",
+    "paper_version_doi": "10.5281/zenodo.24350515"
   }
 }

@@ -1,0 +1,70 @@
+version: v0.4
+project:
+  name: Near-Linear Preprocessing for Reachability After Two Vertex Failures in Directed
+    Acyclic Graphs
+  description: Theorem 1.1 gives a deterministic word-RAM oracle for a fixed source
+    in a directed acyclic graph. For n vertices and m arc occurrences, construction
+    takes O((n+m) log²(n+2)) operations and O(n+m) peak words and retains O(n) words.
+    Using the retained index alone, the query program decides reachability to an original
+    target after at most two vertex failures in O(log(n+2)) operations.
+  authors:
+  - name: Idris Ali Shaik
+    github: shaikidris
+    orcid: 0009-0009-9699-9712
+  responsible_maintainers:
+  - name: Idris Ali Shaik
+    github: shaikidris
+    orcid: 0009-0009-9699-9712
+  license: Apache-2.0
+classification:
+  arxiv:
+  - cs.DS
+  msc2020:
+  - 68R10
+sources:
+- title: Near-Linear Preprocessing for Reachability After Two Vertex Failures in Directed
+    Acyclic Graphs
+  type: preprint
+  id: https://doi.org/10.5281/zenodo.24350515
+  location: Version 1.3, Theorem 1.1
+  authors:
+  - name: Idris Ali Shaik
+    orcid: 0009-0009-9699-9712
+  relationship: formalizes
+status:
+  scope: The selected result covers the single-target oracle, with explicit bytecode
+    witnesses, word-operation counts and memory bounds. The separate listed-target
+    and guarded-decoder corollaries are outside the selected result.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+automation:
+  methods:
+  - method: agent
+    models:
+    - OpenAI Codex
+    - Gemini Carbon
+    framework: Codex and Google Antigravity
+    tool_setup: AI-assisted Lean module development, local Lake builds, and kernel
+      checks.
+fidelity:
+  divergences: The machine reads the explicit adjacency lists in compressed sparse
+    row form. Word width is logarithmic in the explicit input size. The builder's
+    source input and the query's failure and target inputs are spelled out by the
+    machine model.
+review:
+  status: self-assessed
+  notes: The selected theorem was audited against the published statement, with exact
+    Lean axiom and independent kernel checks.
+alignment:
+  namespace: PaperB
+  statements:
+  - source: v1.3, Theorem 1.1
+    lean: PaperB.BytecodeContract.twoFailureOracleBytecode
+    module: PaperB.BytecodeContract
+    status: proved
+    note: The explicit builders and queries realize the resource contract from packed
+      adjacency lists through the sealed index.
