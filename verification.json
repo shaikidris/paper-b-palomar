@@ -6,7 +6,7 @@
   "build": "Build completed successfully (434 jobs).",
   "challenge": "Build completed successfully (3 jobs).",
   "comparator": "Challenge and Solution statement dependency closures match",
-  "scope": "Local build, Comparator statement match and source preflight. The independent export replay has its own evidence.",
+  "scope": "Local build, source preflight, Comparator statement match and independent Lean kernel replay.",
   "export_sha256": "e74883b8563a901fa716334b2179514e178997153b9eed8c1f2cc08d6a3c016c",
   "source_preflight": {
     "schema_version": 1,
@@ -455,5 +455,6 @@
     "lake-manifest.json": "0b33d0a190491bbcb097037a504a4bd7d125b2062c8e83943ae8a8a2698f8a86",
     "lakefile.toml": "2433f2f49c164dad0d3126801d5bfb3cb4b2afda20b9cf23254904347de7c19a",
     "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
-  }
+  },
+  "kernel": "Lean default kernel accepts the solution"
 }
