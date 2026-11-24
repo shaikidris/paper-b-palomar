@@ -166,27 +166,9 @@ needs = ["ProofStage06"]
 [[lean_lib]]
 name = "ProofStage08"
 roots = [
-  "PaperB.ExitActualContract", "PaperB.ExitActualInputsBuild", "PaperB.RamExitSummaryBuild",
-  "PaperB.RamExitSummaryCopy", "PaperB.RamExitSummaryCsr", "PaperB.RamExitSummaryCsrScatter",
-  "PaperB.RamExitSummaryEval", "PaperB.RamExitSummaryEvalApply", "PaperB.RamExitSummaryEvalFold",
-  "PaperB.RamExitSummaryEvalHeader", "PaperB.RamExitSummaryEvalLoop", "PaperB.RamExitSummaryEvalROM",
-  "PaperB.RamExitSummaryEvalSelect", "PaperB.RamExitSummaryIntervalJoin", "PaperB.RamExitSummaryKahnInner",
-  "PaperB.RamExitSummaryKahnOuter", "PaperB.RamExitSummaryKahnPop", "PaperB.RamExitSummaryKahnSeed",
-  "PaperB.RamExitSummarySealBridge", "PaperB.RamExitSummarySetup", "PaperB.RamExitSummarySlices",
-  "PaperB.RamExitSummaryStage1", "PaperB.RamExitSummaryStage3", "PaperB.RamExitSummarySweepAAncestry",
-  "PaperB.RamExitSummarySweepAArc", "PaperB.RamExitSummarySweepAArcDirect", "PaperB.RamExitSummarySweepAArcFull",
-  "PaperB.RamExitSummarySweepADecode", "PaperB.RamExitSummarySweepADirect", "PaperB.RamExitSummarySweepAJoin",
-  "PaperB.RamExitSummarySweepALoop", "PaperB.RamExitSummarySweepANext", "PaperB.RamExitSummarySweepAOwner",
-  "PaperB.RamExitSummarySweepAPrepare", "PaperB.RamExitSummarySweepAROM", "PaperB.RamExitSummarySweepARun",
-  "PaperB.RamExitSummarySweepAWrite", "PaperB.RamExitSummarySweepAncestor", "PaperB.RamExitSummarySweepArc",
-  "PaperB.RamExitSummarySweepBCopy", "PaperB.RamExitSummarySweepBFresh", "PaperB.RamExitSummarySweepBJump",
-  "PaperB.RamExitSummarySweepBJumpFirst", "PaperB.RamExitSummarySweepBJumpSecond", "PaperB.RamExitSummarySweepBNode",
-  "PaperB.RamExitSummarySweepBPair", "PaperB.RamExitSummarySweepBParent", "PaperB.RamExitSummarySweepBParentHeader",
-  "PaperB.RamExitSummarySweepBParentPrepare", "PaperB.RamExitSummarySweepBParentWrite", "PaperB.RamExitSummarySweepBPrepare",
-  "PaperB.RamExitSummarySweepBROM", "PaperB.RamExitSummarySweepBRun", "PaperB.RamExitSummarySweepBTag",
-  "PaperB.RamExitSummarySweepCount", "PaperB.RamExitSummarySweepLive", "PaperB.RamExitSummarySweepMap",
-  "PaperB.RamExitSummarySweepROM", "PaperB.RamExitSummarySweepRows", "PaperB.RamExitSummarySweepRun",
-  "PaperB.RamExitSummarySweepZero", "PaperB.RamExitSummaryTrigger", "PaperB.RamExitSummaryWordCodec",
+  "PaperB.ExitActualContract", "PaperB.ExitActualInputsBuild", "PaperB.RamExitSummaryEval",
+  "PaperB.RamExitSummaryIntervalJoin", "PaperB.RamExitSummarySetup", "PaperB.RamExitSummarySweepZero",
+  "PaperB.RamExitSummaryWordCodec",
 ]
 needs = ["ProofStage07"]
 
@@ -265,44 +247,89 @@ needs = ["ProofStage17"]
 [[lean_lib]]
 name = "ProofStage19"
 roots = [
-  "PaperB.RamFamilyForestLoop",
+  "PaperB.RamExitSummaryCsr",
 ]
 needs = ["ProofStage18"]
 
 [[lean_lib]]
 name = "ProofStage20"
 roots = [
-  "PaperB.RamOracleQuery",
+  "PaperB.RamExitSummaryCsrScatter", "PaperB.RamExitSummaryKahnInner", "PaperB.RamExitSummaryKahnOuter",
+  "PaperB.RamExitSummaryKahnPop", "PaperB.RamExitSummaryKahnSeed", "PaperB.RamExitSummaryStage1",
+  "PaperB.RamExitSummaryStage3", "PaperB.RamExitSummarySweepAncestor", "PaperB.RamExitSummarySweepLive",
+  "PaperB.RamExitSummaryTrigger",
 ]
 needs = ["ProofStage19"]
 
 [[lean_lib]]
 name = "ProofStage21"
 roots = [
-  "PaperB.RamPrefixAndForestLoop", "PaperB.RamStaticReaderBridge",
+  "PaperB.RamExitSummarySlices",
 ]
 needs = ["ProofStage20"]
 
 [[lean_lib]]
 name = "ProofStage22"
 roots = [
-  "PaperB.RamSealedPackerPrimitives",
+  "PaperB.RamExitSummaryBuild", "PaperB.RamExitSummaryCopy", "PaperB.RamExitSummaryEvalApply",
+  "PaperB.RamExitSummaryEvalFold", "PaperB.RamExitSummaryEvalHeader", "PaperB.RamExitSummaryEvalLoop",
+  "PaperB.RamExitSummaryEvalROM", "PaperB.RamExitSummaryEvalSelect", "PaperB.RamExitSummarySealBridge",
+  "PaperB.RamExitSummarySweepAAncestry", "PaperB.RamExitSummarySweepAArc", "PaperB.RamExitSummarySweepAArcDirect",
+  "PaperB.RamExitSummarySweepAArcFull", "PaperB.RamExitSummarySweepADecode", "PaperB.RamExitSummarySweepADirect",
+  "PaperB.RamExitSummarySweepAJoin", "PaperB.RamExitSummarySweepALoop", "PaperB.RamExitSummarySweepANext",
+  "PaperB.RamExitSummarySweepAOwner", "PaperB.RamExitSummarySweepAPrepare", "PaperB.RamExitSummarySweepAROM",
+  "PaperB.RamExitSummarySweepARun", "PaperB.RamExitSummarySweepAWrite", "PaperB.RamExitSummarySweepArc",
+  "PaperB.RamExitSummarySweepBCopy", "PaperB.RamExitSummarySweepBFresh", "PaperB.RamExitSummarySweepBJump",
+  "PaperB.RamExitSummarySweepBJumpFirst", "PaperB.RamExitSummarySweepBJumpSecond", "PaperB.RamExitSummarySweepBNode",
+  "PaperB.RamExitSummarySweepBPair", "PaperB.RamExitSummarySweepBParent", "PaperB.RamExitSummarySweepBParentHeader",
+  "PaperB.RamExitSummarySweepBParentPrepare", "PaperB.RamExitSummarySweepBParentWrite", "PaperB.RamExitSummarySweepBPrepare",
+  "PaperB.RamExitSummarySweepBROM", "PaperB.RamExitSummarySweepBRun", "PaperB.RamExitSummarySweepBTag",
+  "PaperB.RamExitSummarySweepCount", "PaperB.RamExitSummarySweepMap", "PaperB.RamExitSummarySweepROM",
+  "PaperB.RamExitSummarySweepRows", "PaperB.RamExitSummarySweepRun",
 ]
 needs = ["ProofStage21"]
 
 [[lean_lib]]
 name = "ProofStage23"
 roots = [
-  "PaperB.RamSealedIndexShift",
+  "PaperB.RamFamilyForestLoop",
 ]
 needs = ["ProofStage22"]
 
 [[lean_lib]]
 name = "ProofStage24"
 roots = [
-  "PaperB.RamSealedPacker",
+  "PaperB.RamOracleQuery",
 ]
 needs = ["ProofStage23"]
+
+[[lean_lib]]
+name = "ProofStage25"
+roots = [
+  "PaperB.RamPrefixAndForestLoop", "PaperB.RamStaticReaderBridge",
+]
+needs = ["ProofStage24"]
+
+[[lean_lib]]
+name = "ProofStage26"
+roots = [
+  "PaperB.RamSealedPackerPrimitives",
+]
+needs = ["ProofStage25"]
+
+[[lean_lib]]
+name = "ProofStage27"
+roots = [
+  "PaperB.RamSealedIndexShift",
+]
+needs = ["ProofStage26"]
+
+[[lean_lib]]
+name = "ProofStage28"
+roots = [
+  "PaperB.RamSealedPacker",
+]
+needs = ["ProofStage27"]
 
 [[lean_lib]]
 name = "PaperB"
@@ -316,7 +343,7 @@ roots = [
   "PaperB.RamSealedOracleAssembly", "PaperB.RamSealedOracleBuild", "PaperB.RamSealedOracleObservation",
   "PaperB.Resources",
 ]
-needs = ["ProofStage24"]
+needs = ["ProofStage28"]
 
 [[lean_lib]]
 name = "Challenge"
