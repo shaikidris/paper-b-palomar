@@ -245,11 +245,24 @@ roots = [
 needs = ["ProofStage17"]
 
 [[lean_lib]]
+name = "ExitSummaryCsrCountLoop"
+roots = ["PaperB.RamExitSummaryCsrCountLoop"]
+needs = ["ProofStage18"]
+moreLeanArgs = ["--threads=4"]
+
+[[lean_lib]]
+name = "ExitSummaryCsrCount"
+roots = ["PaperB.RamExitSummaryCsrCount"]
+needs = ["ExitSummaryCsrCountLoop"]
+moreLeanArgs = ["--threads=4"]
+
+[[lean_lib]]
 name = "ProofStage19"
 roots = [
   "PaperB.RamExitSummaryCsr",
 ]
-needs = ["ProofStage18"]
+needs = ["ExitSummaryCsrCount"]
+moreLeanArgs = ["--threads=4"]
 
 [[lean_lib]]
 name = "ProofStage20"
