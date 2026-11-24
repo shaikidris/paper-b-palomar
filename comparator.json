@@ -1,0 +1,6 @@
+{
+  "challenge_module": "OracleChallenge",
+  "solution_module": "Solution",
+  "theorem_names": ["PaperB.BytecodeContract.twoFailureOracleBytecode"],
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"]
+}
