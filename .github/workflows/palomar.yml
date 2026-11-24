@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/palomar.yml
+      - lakefile.toml
   workflow_dispatch:
 
 permissions:

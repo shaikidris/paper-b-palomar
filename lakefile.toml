@@ -2,6 +2,9 @@ name = "paperB"
 version = "0.1.0"
 defaultTargets = ["Solution"]
 
+# Limit each compiler process to one elaboration thread.
+moreLeanArgs = ["--threads=1"]
+
 [leanOptions]
 autoImplicit = false
 relaxedAutoImplicit = false
