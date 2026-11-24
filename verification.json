@@ -456,5 +456,23 @@
     "lakefile.toml": "2433f2f49c164dad0d3126801d5bfb3cb4b2afda20b9cf23254904347de7c19a",
     "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
   },
-  "kernel": "Lean default kernel accepts the solution"
+  "kernel": "Lean default kernel accepts the solution",
+  "nanoda": {
+    "version": "0.4.17",
+    "environment": "local macOS",
+    "binary_sha256": "85daddc584afe0d8fa28e18d4c566219bc3c8ddd8b0d43b90285a8f5b35faf2c",
+    "exit_code": 0,
+    "config": {
+      "use_stdin": false,
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "unpermitted_axiom_hard_error": false,
+      "num_threads": 4,
+      "nat_extension": true,
+      "string_extension": true
+    }
+  }
 }
